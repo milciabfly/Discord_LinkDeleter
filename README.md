@@ -46,5 +46,11 @@ MAX_TIMEOUT_ATTEMPTS=3
 ; ユーザのタイムアウト時間
 TIMEOUT_DURATION=2
 ```
-
+### ２ー２．パッケージをインストールする（ソースコードをダウンロードした場合）
+```powershell
+Install-Package Discord.net
+Install-Package DotNetEnv
+Install-Package ini-parser
+Install-Package Microsoft.Extensions.DependencyInjection
+```
 ### ３．環境に合わせたやり方で起動する
