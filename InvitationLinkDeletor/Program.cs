@@ -50,13 +50,13 @@ namespace InvitationLinkDeletor
         private void ReadFile()
         {
             //.envファイル読み込み
-            Env.Load(".env");
+            Env.Load($"{AppDomain.CurrentDomain.BaseDirectory}.env");
             botToken = string.IsNullOrEmpty(Env.GetString("DISCORD_TOKEN")) ? "null" : Env.GetString("DISCORD_TOKEN"); // null or 空白を判断
             if (botToken == null) throw new InvalidOperationException("トークンが設定されていません。");
 
             //.iniファイル読み込み
             var parser = new FileIniDataParser();
-            var data = parser.ReadFile($"config.ini");
+            var data = parser.ReadFile($"{AppDomain.CurrentDomain.BaseDirectory}config.ini");
             //ID
             Console.WriteLine(data["IDS"]["GUILDID"]);
             if (!ulong.TryParse(data["IDS"]["GUILDID"] ?? "0", out guildId) || guildId == 0) throw new InvalidOperationException("GUILDIDが設定されていません。");
