@@ -1,7 +1,7 @@
 ![GCSICON](https://milhomescd.com/GCS_icon.png)
 
-# Discord LinkDeletorとは
-Discord LinkDeletorはDiscordサーバーにて、招待リンク or 設定したURLリンクが送信された際に自動削除するBOTです。
+# Discord LinkDeleterとは
+Discord LinkDeleterはDiscordサーバーにて、招待リンク or 設定したURLリンクが送信された際に自動削除するBOTです。
 
 ## できる事
 - 招待URLの自動削除
