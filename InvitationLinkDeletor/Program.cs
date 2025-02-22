@@ -6,7 +6,7 @@ using DotNetEnv;
 using IniParser;
 using Newtonsoft.Json;
 
-namespace InvitationLinkDeletor
+namespace InvitationLinkDeleter
 {
     class ILD
     {
